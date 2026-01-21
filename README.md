@@ -338,20 +338,12 @@ Contributions are welcome! Here's how you can help:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
-
-- Your Name - _Initial work_
-
 ## 🙏 Acknowledgments
 
 - Thanks to the campus community for inspiration
 - MongoDB for excellent documentation
 - React team for the amazing framework
 - All contributors who have helped this project grow
-
-## 📞 Support
-
-For support, email your-email@example.com or open an issue in the repository.
 
 ---
 
