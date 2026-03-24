@@ -1,0 +1,188 @@
+/* Icons.css - Modern Icon Utilities */
+
+/* Icon Base Styles */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.icon-sm {
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.875rem;
+}
+
+.icon-lg {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.icon-xl {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Icon Colors */
+.icon-primary { color: var(--primary-color); }
+.icon-success { color: var(--success-color); }
+.icon-warning { color: var(--warning-color); }
+.icon-error { color: var(--error-color); }
+.icon-text { color: var(--text-color); }
+.icon-secondary { color: var(--text-secondary); }
+
+/* Icon Utilities */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.icon-button:hover {
+  background: var(--bg-light);
+  transform: translateY(-1px);
+}
+
+/* Navigation Icons */
+.nav-icon::before { content: '🏠'; } /* Home */
+.nav-products::before { content: '🛍️'; } /* Products */
+.nav-add::before { content: '➕'; } /* Add */
+.nav-profile::before { content: '👤'; } /* Profile */
+.nav-chat::before { content: '💬'; } /* Chat */
+.nav-logout::before { content: '🚪'; } /* Logout */
+
+/* Action Icons */
+.icon-search::before { content: '🔍'; }
+.icon-filter::before { content: '🔧'; }
+.icon-edit::before { content: '✏️'; }
+.icon-delete::before { content: '🗑️'; }
+.icon-view::before { content: '👁️'; }
+.icon-heart::before { content: '❤️'; }
+.icon-cart::before { content: '🛒'; }
+.icon-contact::before { content: '📞'; }
+.icon-email::before { content: '📧'; }
+.icon-location::before { content: '📍'; }
+.icon-calendar::before { content: '📅'; }
+.icon-camera::before { content: '📷'; }
+.icon-upload::before { content: '📤'; }
+.icon-download::before { content: '📥'; }
+
+/* Status Icons */
+.icon-available::before { content: '✅'; }
+.icon-sold::before { content: '🔒'; }
+.icon-pending::before { content: '⏳'; }
+.icon-completed::before { content: '✓'; }
+.icon-cancelled::before { content: '❌'; }
+
+/* Category Icons */
+.icon-electronics::before { content: '📱'; }
+.icon-books::before { content: '📚'; }
+.icon-clothing::before { content: '👕'; }
+.icon-furniture::before { content: '🪑'; }
+.icon-sports::before { content: '⚽'; }
+.icon-other::before { content: '📦'; }
+
+/* Empty State Icons */
+.icon-empty-box::before { content: '📦'; }
+.icon-empty-heart::before { content: '💔'; }
+.icon-empty-money::before { content: '💰'; }
+.icon-empty-search::before { content: '🔍'; }
+
+/* Loading and Status */
+.icon-loading {
+  animation: spin 1s linear infinite;
+}
+
+.icon-loading::before {
+  content: '⟳';
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Hover Effects */
+.icon-hover {
+  transition: all 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Icon Groups */
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-group .icon {
+  flex-shrink: 0;
+}
+
+/* Badge Icons */
+.icon-badge {
+  position: relative;
+}
+
+.icon-badge::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: var(--error-color);
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Icon Animations */
+.icon-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.icon-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+/* Responsive Icon Sizes */
+@media (max-width: 768px) {
+  .icon-responsive {
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .icon-responsive.icon-lg {
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 1rem;
+  }
+}
